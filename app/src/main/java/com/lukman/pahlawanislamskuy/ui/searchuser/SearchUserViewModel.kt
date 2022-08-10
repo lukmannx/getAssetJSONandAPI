@@ -1,10 +1,10 @@
-package com.lukman.pahlawanislamskuy.ui.listuser
+package com.lukman.pahlawanislamskuy.ui.searchuser
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.lukman.pahlawanislamskuy.network.UsersResponse
+import com.lukman.pahlawanislamskuy.data.UsersResponse
 import com.lukman.pahlawanislamskuy.network.ApiConfig
 import retrofit2.Call
 import retrofit2.Callback
@@ -15,7 +15,7 @@ class SearchUserViewModel : ViewModel() {
     val listUser = MutableLiveData<UsersResponse>()
 
     fun searchUser(searchViewString: String) {
-        ApiConfig.getApiService().searchUser("Andi").enqueue(object : Callback<UsersResponse> {
+        ApiConfig.getApiService().searchUser(searchViewString).enqueue(object : Callback<UsersResponse> {
             override fun onResponse(call: Call<UsersResponse>, response: Response<UsersResponse>) {
                 listUser.value = response.body()
             }

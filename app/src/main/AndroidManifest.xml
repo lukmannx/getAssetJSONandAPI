@@ -12,16 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PahlawanIslamSkuy">
         <activity
-            android:name=".JsonActivity"
+            android:name=".ui.searchrepo.DetailUser"
             android:exported="false" />
         <activity
-            android:name=".ui.SearchRepoActivity"
+            android:name=".ui.pahlawanlocal.JsonActivity"
             android:exported="false" />
         <activity
-            android:name=".SearchUserActivity"
+            android:name=".ui.searchrepo.SearchRepoActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.ListUserActivity"
+            android:name=".ui.searchuser.SearchUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.listuser.ListUserActivity"
             android:exported="false" />
         <activity
             android:name=".ui.DetailActivity"

@@ -4,7 +4,7 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.lukman.pahlawanislamskuy.network.UsersResponseItem
+import com.lukman.pahlawanislamskuy.data.UsersResponseItem
 import com.lukman.pahlawanislamskuy.network.ApiConfig
 import retrofit2.Call
 import retrofit2.Callback

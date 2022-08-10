@@ -1,4 +1,4 @@
-package com.lukman.pahlawanislamskuy
+package com.lukman.pahlawanislamskuy.ui.pahlawanlocal
 
 import android.content.res.AssetManager
 import androidx.appcompat.app.AppCompatActivity
@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.lukman.pahlawanislamskuy.adapter.PahlawanAdapter
 import com.lukman.pahlawanislamskuy.data.Pahlawan
 import com.lukman.pahlawanislamskuy.databinding.ActivityJsonBinding
-import com.lukman.pahlawanislamskuy.databinding.ActivityMainBinding
 import org.json.JSONException
 import org.json.JSONObject
 

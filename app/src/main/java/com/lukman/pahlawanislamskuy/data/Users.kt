@@ -1,12 +1,14 @@
-package com.lukman.pahlawanislamskuy.network
+package com.lukman.pahlawanislamskuy.data
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
 data class UsersResponse(
 	@SerializedName("items")  // value = key
 	val  items: List<UsersResponseItem> //encapsulation -- mengembalikan nilai list
 )
-
+@Parcelize
 data class UsersResponseItem(
 
 	@field:SerializedName("repos_url")
@@ -59,4 +61,4 @@ data class UsersResponseItem(
 
 	@field:SerializedName("organizations_url")
 	val organizationsUrl: String? = null
-)
+) : Parcelable

@@ -1,20 +1,14 @@
 package com.lukman.pahlawanislamskuy.ui
 
 import android.content.Intent
-import android.content.res.AssetManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.lukman.pahlawanislamskuy.JsonActivity
 import com.lukman.pahlawanislamskuy.R
-import com.lukman.pahlawanislamskuy.SearchUserActivity
-import com.lukman.pahlawanislamskuy.adapter.PahlawanAdapter
-import com.lukman.pahlawanislamskuy.data.Pahlawan
 import com.lukman.pahlawanislamskuy.databinding.ActivityMainBinding
-import org.json.JSONException
-import org.json.JSONObject
+import com.lukman.pahlawanislamskuy.ui.listuser.ListUserActivity
+import com.lukman.pahlawanislamskuy.ui.pahlawanlocal.JsonActivity
+import com.lukman.pahlawanislamskuy.ui.searchuser.SearchUserActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener{
 
@@ -37,7 +31,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
     override fun onClick(view: View?) {
         when (view?.id) {
             R.id.btnDisplayJson -> startActivity(Intent(this, JsonActivity::class.java))
-            R.id.btnDisplayUser -> startActivity(Intent(this, JsonActivity::class.java))
+            R.id.btnDisplayUser -> startActivity(Intent(this, ListUserActivity::class.java))
             R.id.btnDisplayUserSearch -> startActivity(Intent(this, SearchUserActivity::class.java))
             R.id.btnRepo -> startActivity(Intent(this, JsonActivity::class.java))
         }

@@ -1,11 +1,10 @@
-package com.lukman.pahlawanislamskuy.ui
+package com.lukman.pahlawanislamskuy.ui.listuser
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.lifecycle.ViewModelProvider
 import com.lukman.pahlawanislamskuy.R
-import com.lukman.pahlawanislamskuy.ui.listuser.ListUserViewModel
 
 class ListUserActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
